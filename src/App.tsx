@@ -1,3 +1,3 @@
 export const App = () => {
-    return null
+    return <div className="bg-background p-2 w-screen h-screen"></div>
 }
