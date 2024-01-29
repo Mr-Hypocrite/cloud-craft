@@ -1,8 +1,9 @@
+import { IWeatherData } from '@/types'
 import { useQuery } from '@tanstack/react-query'
 
 const getWeatherByCityFn = async ( cityName: string ) => {
     const response = await fetch(
-        `${import.meta.env.VITE_OPEN_WEATHER_API_BASE_URL}?q=${cityName}&appid=${
+        `${import.meta.env.VITE_OPEN_WEATHER_API_BASE_URL}weather?q=${cityName}&appid=${
             import.meta.env.VITE_OPEN_WEATHER_MAP_API_KEY
         }`
     )
@@ -11,7 +12,7 @@ const getWeatherByCityFn = async ( cityName: string ) => {
 }
 
 export const useGetWeatherByCity = ( cityName: string ) => {
-    return useQuery( {
+    return useQuery<IWeatherData>( {
         queryKey: [ 'current-weather-by-city-name', cityName ],
         queryFn: () => getWeatherByCityFn( cityName ),
     } )
