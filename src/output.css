@@ -657,12 +657,24 @@ body {
   height: 100vh;
 }
 
+.h-1\/5 {
+  height: 20%;
+}
+
+.max-h-32 {
+  max-height: 8rem;
+}
+
 .w-9 {
   width: 2.25rem;
 }
 
 .w-screen {
   width: 100vw;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .scale-110 {
@@ -689,6 +701,10 @@ body {
 
 .justify-center {
   justify-content: center;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .overflow-hidden {
@@ -729,6 +745,11 @@ body {
 
 .bg-secondary {
   background-color: hsl(var(--secondary));
+}
+
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
 .object-cover {
