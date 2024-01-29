@@ -8,7 +8,7 @@ const queryClient = new QueryClient( {
     defaultOptions: {
         queries: {
             suspense: true,
-            refetchOnWindowFocus: true,
+            refetchOnWindowFocus: false,
             staleTime: 5 * 1000,
         },
     },
