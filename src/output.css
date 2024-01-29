@@ -633,10 +633,6 @@ body {
   display: inline-flex;
 }
 
-.h-1\/5 {
-  height: 20%;
-}
-
 .h-10 {
   height: 2.5rem;
 }
@@ -661,16 +657,8 @@ body {
   height: 100vh;
 }
 
-.max-h-32 {
-  max-height: 8rem;
-}
-
 .w-9 {
   width: 2.25rem;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .w-screen {
@@ -701,10 +689,6 @@ body {
 
 .justify-center {
   justify-content: center;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .overflow-hidden {
@@ -745,11 +729,6 @@ body {
 
 .bg-secondary {
   background-color: hsl(var(--secondary));
-}
-
-.bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
 .object-cover {
