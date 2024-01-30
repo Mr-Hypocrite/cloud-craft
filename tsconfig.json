@@ -16,7 +16,6 @@
 
     /* Linting */
     "pretty": true,
-    "resolveJsonModule": true,
     "strict": true,
     "strictFunctionTypes": true,
     "strictNullChecks": true,
