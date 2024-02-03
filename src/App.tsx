@@ -1,17 +1,28 @@
-import { Mainmenu } from '@/components'
+import { Main } from '@/components'
 import { useGetForecastByCoord, useGetWeatherByCity } from '@/hooks'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo } from 'react'
+import { useWeatherStore } from './store'
 
 export const App = () => {
-    const [ city, _setCity ] = useState( 'pune' )
-    const { data: currentWeatherData } = useGetWeatherByCity( 'pune' )
+    const city = useWeatherStore( ( { searchedCity } ) => searchedCity )
+    const { data: currentWeatherData } = useGetWeatherByCity( city )
     const coord = useMemo( () => currentWeatherData.coord, [ currentWeatherData ] )
     const { data: forecastData } = useGetForecastByCoord( coord )
+    const setCurrentWeatherData = useWeatherStore( ( state ) => state.setCurrentWeatherData )
+    const setCurrentForecastData = useWeatherStore( ( state ) => state.setForecastWeatherData )
+
+    useEffect( () => {
+        if ( currentWeatherData ) {
+            setCurrentWeatherData( currentWeatherData )
+        }
+        if ( forecastData ) {
+            setCurrentForecastData( forecastData )
+        }
+    }, [ currentWeatherData, forecastData ] )
 
     return (
-        <div className="bg-background p-2 w-screen h-screen flex flex-col gap-4">
-            <Mainmenu />
-            <div className="bg-slate-300 w-full max-h-32 h-1/5 rounded-3xl"></div>
+        <div className="bg-night-sky-1 bg-cover bg-no-repeat p-2 w-screen h-screen flex flex-col gap-4">
+            <Main />
         </div>
     )
 }
