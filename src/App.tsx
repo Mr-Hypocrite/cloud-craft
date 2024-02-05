@@ -21,7 +21,7 @@ export const App = () => {
     }, [ currentWeatherData, forecastData ] )
 
     return (
-        <div className="bg-night-sky-1 bg-cover bg-no-repeat p-2 w-screen h-screen flex flex-col gap-4">
+        <div className="bg-background p-2 w-screen h-screen flex flex-col gap-4">
             <Main />
         </div>
     )
