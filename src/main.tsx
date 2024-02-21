@@ -7,7 +7,6 @@ import './output.css'
 const queryClient = new QueryClient( {
     defaultOptions: {
         queries: {
-            suspense: true,
             refetchOnWindowFocus: false,
             staleTime: 5 * 1000,
         },

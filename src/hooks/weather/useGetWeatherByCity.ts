@@ -1,5 +1,5 @@
 import { IWeatherData } from '@/types'
-import { useQuery } from '@tanstack/react-query'
+import { useSuspenseQuery } from '@tanstack/react-query'
 
 const getWeatherByCityFn = async ( cityName: string ) => {
     const response = await fetch(
@@ -12,7 +12,7 @@ const getWeatherByCityFn = async ( cityName: string ) => {
 }
 
 export const useGetWeatherByCity = ( cityName: string ) => {
-    return useQuery<IWeatherData>( {
+    return useSuspenseQuery<IWeatherData>( {
         queryKey: [ 'current-weather-by-city-name', cityName ],
         queryFn: () => getWeatherByCityFn( cityName ),
     } )

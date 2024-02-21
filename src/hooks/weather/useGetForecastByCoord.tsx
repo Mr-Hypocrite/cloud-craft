@@ -1,5 +1,5 @@
 import { IForeCastData } from '@/types'
-import { useQuery } from '@tanstack/react-query'
+import { useSuspenseQuery } from '@tanstack/react-query'
 
 type GetWeatherForecastCoordParams = {
     lat: number
@@ -20,7 +20,7 @@ const getForecastByCoordFn = async ( { lat, lon }: GetWeatherForecastCoordParams
 }
 
 export const useGetForecastByCoord = ( { lat, lon }: GetWeatherForecastCoordParams ) => {
-    return useQuery<IForeCastData>( {
+    return useSuspenseQuery<IForeCastData>( {
         queryKey: [ 'forecast-by-city-lat-lon', lat, lon ],
         queryFn: () => getForecastByCoordFn( { lat, lon } ),
     } )
