@@ -40,6 +40,57 @@
     }
 
     .dark {
+        /* Color Vars */
+        --material-theme--sys--dark--primary: rgba(208, 188, 254, 1);
+        --material-theme--sys--dark--surface-tint: rgba(208, 188, 255, 1);
+        --material-theme--sys--dark--on-primary: rgba(56, 30, 114, 1);
+        --material-theme--sys--dark--primary-container: rgba(79, 55, 139, 1);
+        --material-theme--sys--dark--on-primary-container: rgba(234, 221, 255, 1);
+        --material-theme--sys--dark--secondary: rgba(204, 194, 220, 1);
+        --material-theme--sys--dark--on-secondary: rgba(51, 45, 65, 1);
+        --material-theme--sys--dark--secondary-container: rgba(74, 68, 88, 1);
+        --material-theme--sys--dark--on-secondary-container: rgba(232, 222, 248, 1);
+        --material-theme--sys--dark--tertiary: rgba(239, 184, 200, 1);
+        --material-theme--sys--dark--on-tertiary: rgba(73, 37, 50, 1);
+        --material-theme--sys--dark--tertiary-container: rgba(99, 59, 72, 1);
+        --material-theme--sys--dark--on-tertiary-container: rgba(255, 216, 228, 1);
+        --material-theme--sys--dark--error: rgba(242, 184, 181, 1);
+        --material-theme--sys--dark--on-error: rgba(96, 20, 16, 1);
+        --material-theme--sys--dark--error-container: rgba(140, 29, 24, 1);
+        --material-theme--sys--dark--on-error-container: rgba(249, 222, 220, 1);
+        --material-theme--sys--dark--background: rgba(20, 18, 24, 1);
+        --material-theme--sys--dark--on-background: rgba(230, 224, 233, 1);
+        --material-theme--sys--dark--surface: rgba(20, 18, 24, 1);
+        --material-theme--sys--dark--on-surface: rgba(230, 224, 233, 1);
+        --material-theme--sys--dark--surface-variant: rgba(73, 69, 79, 1);
+        --material-theme--sys--dark--on-surface-variant: rgba(202, 196, 208, 1);
+        --material-theme--sys--dark--outline: rgba(147, 143, 153, 1);
+        --material-theme--sys--dark--outline-variant: rgba(73, 69, 79, 1);
+        --material-theme--sys--dark--shadow: rgba(0, 0, 0, 1);
+        --material-theme--sys--dark--scrim: rgba(0, 0, 0, 1);
+        --material-theme--sys--dark--inverse-surface: rgba(230, 224, 233, 1);
+        --material-theme--sys--dark--inverse-on-surface: rgba(50, 47, 53, 1);
+        --material-theme--sys--dark--inverse-primary: rgba(103, 80, 164, 1);
+        --material-theme--sys--dark--primary-fixed: rgba(234, 221, 255, 1);
+        --material-theme--sys--dark--on-primary-fixed: rgba(33, 0, 93, 1);
+        --material-theme--sys--dark--primary-fixed-dim: rgba(208, 188, 255, 1);
+        --material-theme--sys--dark--on-primary-fixed-variant: rgba(79, 55, 139, 1);
+        --material-theme--sys--dark--secondary-fixed: rgba(232, 222, 248, 1);
+        --material-theme--sys--dark--on-secondary-fixed: rgba(29, 25, 43, 1);
+        --material-theme--sys--dark--secondary-fixed-dim: rgba(204, 194, 220, 1);
+        --material-theme--sys--dark--on-secondary-fixed-variant: rgba(74, 68, 88, 1);
+        --material-theme--sys--dark--tertiary-fixed: rgba(255, 216, 228, 1);
+        --material-theme--sys--dark--on-tertiary-fixed: rgba(49, 17, 29, 1);
+        --material-theme--sys--dark--tertiary-fixed-dim: rgba(239, 184, 200, 1);
+        --material-theme--sys--dark--on-tertiary-fixed-variant: rgba(99, 59, 72, 1);
+        --material-theme--sys--dark--surface-dim: rgba(20, 18, 24, 1);
+        --material-theme--sys--dark--surface-bright: rgba(59, 56, 62, 1);
+        --material-theme--sys--dark--surface-container-lowest: rgba(15, 13, 19, 1);
+        --material-theme--sys--dark--surface-container-low: rgba(29, 27, 32, 1);
+        --material-theme--sys--dark--surface-container: rgba(33, 31, 38, 1);
+        --material-theme--sys--dark--surface-container-high: rgba(43, 41, 48, 1);
+        --material-theme--sys--dark--surface-container-highest: rgba(54, 52, 59, 1);
+        /* Color Vars */
         --background: 224 71% 4%;
         --foreground: 213 31% 91%;
 
