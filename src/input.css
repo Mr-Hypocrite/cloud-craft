@@ -91,6 +91,7 @@
         --material-theme--sys--dark--surface-container-high: rgba(43, 41, 48, 1);
         --material-theme--sys--dark--surface-container-highest: rgba(54, 52, 59, 1);
         /* Color Vars */
+
         --background: 224 71% 4%;
         --foreground: 213 31% 91%;
 
@@ -218,10 +219,10 @@
 
 @layer base {
     * {
-        @apply border-border;
+        @apply box-border;
     }
     body {
-        @apply bg-background text-foreground;
+        @apply bg-background text-onBackground;
         font-feature-settings: 'rlig' 1, 'calt' 1;
     }
 }
