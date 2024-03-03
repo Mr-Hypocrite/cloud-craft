@@ -71,6 +71,98 @@
 
         --radius: 0.5rem;
     }
+
+    /* Typography styles */
+    .text--display--large: {
+        font-size: 57px;
+        font-weight: 400;
+        letter-spacing: -0.25px;
+        line-height: 64px;
+    }
+    .text--display--medium: {
+        font-size: 45px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 52px;
+    }
+    .text--display--small: {
+        font-size: 36px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 44px;
+    }
+    .text--headline--large: {
+        font-size: 32px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 40px;
+    }
+    .text--headline--medium: {
+        font-size: 28px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 36px;
+    }
+    .text--headline--small: {
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 32px;
+    }
+    .text--body--large: {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        line-height: 24px;
+    }
+    .text--body--medium: {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+    }
+    .text--body--small: {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        line-height: 16px;
+    }
+    .text--label--large: {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.1px;
+        line-height: 20px;
+    }
+    .text--label--medium: {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        line-height: 16px;
+    }
+    .text--label--small: {
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        line-height: 16;
+    }
+    .text--title--large: {
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 28px;
+    }
+    .text--title--medium: {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.15px;
+        line-height: 24px;
+    }
+    .text--title--small: {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.1px;
+        line-height: 20px;
+    }
 }
 
 @layer base {
