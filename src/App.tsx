@@ -1,4 +1,4 @@
-import { Main } from '@/components'
+import { Tabs, TabsContent, TabsList, TabsTrigger, WeatherContent } from '@/components'
 import { useGetForecastByCoord, useGetWeatherByCity } from '@/hooks'
 import { useEffect, useMemo } from 'react'
 import { useWeatherStore } from './store'
@@ -21,8 +21,17 @@ export const App = () => {
     }, [ currentWeatherData, forecastData ] )
 
     return (
-        <div className="bg-background p-2 w-screen h-screen flex flex-col gap-4">
-            <Main />
-        </div>
+        <Tabs defaultValue="weather" className="bg-background p-2 w-screen h-screen flex flex-col">
+            <TabsContent value="weather" className="grow overflow-scroll invisible-scrollbar">
+                <WeatherContent />
+            </TabsContent>
+            <TabsContent value="settings" className="grow overflow-scroll"></TabsContent>
+            <TabsContent value="bookmarks" className="grow overflow-scroll"></TabsContent>
+            <TabsList className="w-full justify-between px-4 py-6">
+                <TabsTrigger value="bookmarks">Bookmarks</TabsTrigger>
+                <TabsTrigger value="weather">Weather</TabsTrigger>
+                <TabsTrigger value="settings">Settings</TabsTrigger>
+            </TabsList>
+        </Tabs>
     )
 }
