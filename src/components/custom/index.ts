@@ -1,1 +1,1 @@
-export * from './main'
+export * from './current-weather'
